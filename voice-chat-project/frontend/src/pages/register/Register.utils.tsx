@@ -18,14 +18,8 @@ const useRegisterUtils = () => {
   } = useForm<RegisterForm>({
     resolver: zodResolver(registerValidator),
     defaultValues: {
-      username: '',
       email: '',
       password: '',
-      date: {
-        day: undefined,
-        month: undefined,
-        year: undefined
-      }
     }
   });
 
