@@ -1,0 +1,31 @@
+{
+  "semi": true,
+  "tabWidth": 2,
+  "printWidth": 100,
+  "singleQuote": true,
+  "trailingComma": "none",
+  "jsxBracketSameLine": true,
+  "importOrder": [
+    "^src",
+    "^pages",
+    "^pages/(.*)$",
+    "^components",
+    "^components/(.*)$",
+    "^context",
+    "^context/(.*)$",
+    "^hooks",
+    "^hooks/(.*)$",
+    "^store",
+    "^store/(.*)$",
+    "^utils",
+    "^utils/(.*)$",
+    "^data",
+    "^data/(.*)$",
+    "^interfaces",
+    "^interfaces/(.*)$",
+    "^[./]"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true,
+  "plugins": ["@trivago/prettier-plugin-sort-imports"]
+}

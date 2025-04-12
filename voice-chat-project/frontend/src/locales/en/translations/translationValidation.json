@@ -1,0 +1,10 @@
+{
+  "usernameMin": "Username must be 4 characters or more",
+  "usernameMax": "Username must be 20 characters or less",
+  "usernameRegex": "Username must contain only letters, numbers and underscore (_)",
+  "passwordMin": "Password must be 5 characters or more",
+  "passwordSpecialChars": "Password must contain at least one special character",
+  "email": "Not a valid email address",
+  "emptyInput": "Input cannot be an empty string",
+  "invalidDate": "Not a valid date"
+}
