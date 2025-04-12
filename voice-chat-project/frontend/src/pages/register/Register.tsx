@@ -1,6 +1,7 @@
 import { Button, Typography } from '@mui/material';
 
 import { RegisterDatepicker, StyledTextfield } from 'components';
+import RouterLink from 'components/RouterLink';
 
 import {
   LogIntoAccountText,
@@ -9,7 +10,6 @@ import {
   RegisterTitleContainer
 } from './Register.styles';
 import useRegisterUtils from './Register.utils';
-import RouterLink from 'components/RouterLink';
 
 const Register = () => {
   const { errors, handleSubmit, onSubmit, register, t } = useRegisterUtils();
@@ -22,7 +22,7 @@ const Register = () => {
               {t('RegisterTitle')}
             </Typography>
           </RegisterTitleContainer>
-          <StyledTextfield
+          {/* <StyledTextfield
             type="text"
             inputTitle="Username"
             register={register}
@@ -31,7 +31,7 @@ const Register = () => {
             error={errors?.username?.message}
             required={true}
             fullWidth
-          />
+          /> */}
           <StyledTextfield
             type="email"
             inputTitle="E-mail"
@@ -52,11 +52,11 @@ const Register = () => {
             required={true}
             fullWidth
           />
-          <RegisterDatepicker
+          {/* <RegisterDatepicker
             placeholder={t('Datepicker')}
             register={register}
             error={errors.date?.root?.message}
-          />
+          /> */}
           <Button variant="contained" fullWidth type="submit">
             {t('RegisterButton')}
           </Button>

@@ -24,6 +24,7 @@ const useLogin = () => {
   useEffect(() => {
     if (isSuccess) {
       webStorage.setJWT(data);
+      console.log('Logged in successfully!');
     }
   }, [isSuccess]);
 
